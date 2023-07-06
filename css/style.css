@@ -1,0 +1,139 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-touch-callout: none; /* iPhone OS, Safari */
+    -webkit-user-select: none; /* Chrome, Safari 3 */
+    -khtml-user-select: none; /* Safari 2 */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}  
+.container {
+    margin: 5vh 0 10vh 0;
+    text-align: center;
+    color: white;
+}
+.logo {
+    margin-bottom: 1.2rem;
+}
+/* ==== Tabela ==== */
+table {
+    padding: 2rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+table td {
+    text-align: left;
+    padding: 10px;
+}
+/* ==== Botão ==== */
+.btn {
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;    
+    background-color: #470000;
+    position: relative;
+    overflow: hidden;
+}
+button:hover {
+    transform: scale(1.1);
+    background-color: #af0000;
+    transition: all 0.3s;
+}
+.btn span {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+.btn::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-radius: 50%;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    background-color: #e70000;
+    transform: translate(-50%,-50%);
+    transition: width .5s, height .5s;
+}
+.btn:hover::before {
+    width: 50px;
+    height: 50px;
+}
+/* ==== Roda pé ==== */
+footer {
+    display: flex;
+    padding: 1rem;
+    color: white;
+    font-weight: 300;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer img {
+    margin-left: 4px;
+}
+footer b {
+    margin-right: 5px;
+}
+/* ==== Barra de rolagem ==== */
+::-webkit-scrollbar {
+    width: 0.7vw;
+}
+::-webkit-scrollbar-track {
+    background-color: #412f00;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f79c00;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffd700 50%, transparent 100%);
+    border-radius: 4px;
+    border: 1px solid #ffd900;
+    transition: all 0.5s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffc400;
+    border: 1px solid #ffffff;
+    background-image: linear-gradient(to bottom, transparent 0%, #fffb19 50%, transparent 100%);
+    transition: all 0.5s;    
+}
+::-webkit-scrollbar-corner {
+    background-color: #f5f5f5;
+}
