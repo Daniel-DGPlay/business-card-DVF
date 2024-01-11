@@ -114,6 +114,9 @@ footer img {
 footer b {
     margin-right: 5px;
 }
+#ano {
+    margin-left: 2px;
+}
 /* ==== Barra de rolagem ==== */
 ::-webkit-scrollbar {
     width: 0.7vw;
