@@ -23,3 +23,6 @@ for (var i = 0; i < btns.length; i++) {
 
   // Atualiza a idade na página
   document.getElementById("age").innerText = calcularIdade("1997-01-12");
+
+  // Atualiza o ano na página
+  document.getElementById("ano").innerText = new Date().getFullYear();
