@@ -25,4 +25,4 @@ Fique à vontade para entrar em contato comigo através do meu email [danielviei
 
 Espero que você aprecie a minha página pessoal de cartão de visitas!
 
-                                        Version 1.0, 12 Julho 2023.
+                                        Version 1.1, 11 Janeiro 2024.
