@@ -15,8 +15,16 @@ for (var i = 0; i < btns.length; i++) {
     const dataNasc = new Date(dataNascimento);
     const dataAtual = new Date();
 
-    const diff = Math.abs(dataAtual - dataNasc);
-    const idade = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    let idade = dataAtual.getFullYear() - dataNasc.getFullYear();
+
+    // Verifica se o aniversário já ocorreu neste ano
+    if (
+      dataAtual.getMonth() < dataNasc.getMonth() ||
+      (dataAtual.getMonth() === dataNasc.getMonth() &&
+        dataAtual.getDate() < dataNasc.getDate())
+    ) {
+      idade--;
+    }
 
     return idade;
   }
