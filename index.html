@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/99695391?v=4" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Currículo Online | Daniel Vieira Ferreira</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Cabeçalho do Perfil -->
+    <header class="bg-profile-header text-white py-5 mb-5 position-relative overflow-hidden">
+        <div class="container profile-container">
+            <div class="row align-items-center">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="mb-4">
+                        <!-- <img src="https://avatars.githubusercontent.com/u/99695391?v=4" alt="Daniel Vieira Ferreira" class="profile-img shadow rounded-circle" width="180" height="180"> -->
+                        <img src="./imgs/profile-img.png" alt="Daniel Vieira Ferreira" class="profile-img shadow rounded-circle" width="180" height="180">
+                    </div>
+                    <h1 class="profile-name fw-bold mb-2">Daniel Vieira Ferreira</h1>
+                    <p class="fs-5 opacity-75 mb-4">Profissional Multifacetado</p>
+
+                    <div class="d-flex justify-content-center gap-4 my-4">
+                        <div class="text-center">
+                            <span class="d-block fs-3 fw-bold">8+</span>
+                            <span class="opacity-75">Anos de Experiência</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="d-block fs-3 fw-bold">4</span>
+                            <span class="opacity-75">Áreas de Atuação</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="d-block fs-3 fw-bold">6</span>
+                            <span class="opacity-75">Cursos Concluídos</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+                        <div class="contact-item  d-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+                            <i class="fas fa-envelope"></i>
+                            <span>danielvieiragnd177@gmail.com</span>
+                        </div>
+                        <div class="contact-item d-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+                            <i class="fas fa-phone"></i>
+                            <span>(21) 96728-7487</span>
+                        </div>
+                        <div class="contact-item d-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3 mt-4">
+                        <a href="https://www.linkedin.com/in/dvf-dev" target="_blank" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Daniel-DGPlay" target="_blank" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=5521967113320&text=Ol%C3%A1%2C+vim+do+seu+%60Curr%C3%ADculo+Online.%60+sou:&type=phone_number&app_absent=0" target="_blank" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:danielvieiragnd177@gmail.com" target="_blank" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="mt-4 d-flex flex-column flex-lg-row align-items-center gap-3 gap-lg-4">
+                        <!-- href="./assets/Curriculo-Daniel-Vieira-Ferreira.pdf"  -->
+                        <!-- <a id="download-link" 
+                        href="#" 
+                        download 
+                        class="btn btn-custom rounded-pill btn-lg fw-medium text-light btn-lg w-100 w-lg-auto border">
+                            <i class="fas fa-download me-2"></i> Baixar Currículo
+                        </a> -->
+
+                        <button class="btn btn-outline-custom bg-light rounded-pill btn-lg fw-medium w-100 w-lg-auto" 
+                                id="open-contact-btn" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#contactModal">
+                            <i class="fas fa-paper-plane me-2"></i> Entrar em Contato
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna Esquerda -->
+                <div class="col-lg-8">
+                    <!-- Objetivo Profissional -->
+                    <section class="mb-4 fade-in">
+                        <div class="content-card p-4 bg-white">
+                            <h2 class="section-title mb-4">🎯 Objetivo Profissional</h2>
+                            <p class="mb-3">
+                                Profissional com experiência sólida em atendimento ao público, operações de varejo (reposição e cozinha industrial), além de atuação autônoma no setor imobiliário. Em constante desenvolvimento na área de tecnologia, busco uma oportunidade que valorize minha capacidade de adaptação, meu compromisso com resultados e minha versatilidade entre setores.
+                                <br><br>
+                                Meu objetivo é integrar uma equipe onde eu possa aplicar meus conhecimentos, expandir minhas competências em ambientes dinâmicos e contribuir de forma estratégica para o crescimento e a eficiência da organização.
+                            </p>
+
+                            <div class="d-flex flex-wrap gap-2 mt-4">
+                                <span class="badge-custom p-2">Comprometido</span>
+                                <span class="badge-custom p-2">Proativo</span>
+                                <span class="badge-custom p-2">Adaptável</span>
+                                <span class="badge-custom p-2">Relacionamento</span>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Experiência Profissional -->
+                    <section class="mb-4 fade-in delay-1">
+                        <div class="content-card p-4 bg-white">
+                            <h2 class="section-title mb-4">💼 Experiência Profissional</h2>
+
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Atual</div>
+                                    <h4 class="timeline-title">Auxiliar de Cozinha</h4>
+                                    <h5 class="text-primary">Cencosud Brasil Comercial S.A (Prezunic)</h5>
+                                    <p class="mt-2">Principais atividades:</p>
+                                    <ul class="mt-2">
+                                        <li>Preparação e pré-preparo de alimentos</li>
+                                        <li>Limpeza e organização da cozinha e refeitório</li>
+                                        <li>Organização para café, almoço e lanche</li>
+                                        <li>Controle de estoque de ingredientes e utensílios</li>
+                                    </ul>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Atual</div>
+                                    <h4 class="timeline-title">Corretor de Imóveis (Autônomo)</h4>
+                                    <h5 class="text-primary">Cury Construtora e Incorporadora S/A 2025 - CRECI 24719-J</h5>
+                                    <p class="mt-2">Atuação independente no mercado imobiliário, com foco em intermediação de vendas de imoveis na planta e prontos. Possuo contrato de prestação de serviços com a <b>Cury Construtora</b>, auxiliando na captação e atendimento de clientes, visitas e negociações.</p>
+                                    <p><strong>CRECI:</strong> 105693</p>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Jan 2016 - Mar 2019</div>
+                                    <h4 class="timeline-title">Repositor</h4>
+                                    <h5 class="text-primary">Supermercado & Padaria Palácio do Catete LTDA (MercaDez)</h5>
+                                    <p class="mt-2">Principais atividades:</p>
+                                    <ul class="mt-2">
+                                        <li>Reposição e precificação de mercadorias</li>
+                                        <li>Conferência de validade e controle de estoque</li>
+                                        <li>Atendimento e suporte ao cliente</li>
+                                    </ul>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Nov 2015 - Dez 2015</div>
+                                    <h4 class="timeline-title">Atendente de Restaurante</h4>
+                                    <h5 class="text-primary">Arcos Dourados Com. de Alimentos LTDA – McDonald's</h5>
+                                    <p class="mt-2">Principais atividades:</p>
+                                    <ul class="mt-2">
+                                        <li>Atendimento ao cliente</li>
+                                        <li>Limpeza e organização do ambiente de trabalho</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Formação Acadêmica -->
+                    <section class="mb-4 fade-in delay-2">
+                        <div class="content-card p-4 bg-white">
+                            <h2 class="section-title mb-4">🎓 Formação Acadêmica</h2>
+
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Cursando (Previsão: Jul 2026)</div>
+                                    <h4 class="timeline-title">Análise e Desenvolvimento de Sistemas</h4>
+                                    <h5 class="text-primary">UNISUAM</h5>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Concluído em 2022</div>
+                                    <h4 class="timeline-title">Técnico em Administração</h4>
+                                    <h5 class="text-primary">Senac</h5>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Concluído em 2016</div>
+                                    <h4 class="timeline-title">Ensino Médio</h4>
+                                    <h5 class="text-primary">C.E. Professor Clóvis Monteiro</h5>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date mb-1">Concluído em 2025</div>
+                                    <h4 class="timeline-title">Formação em Corretor de Imóveis</h4>
+                                    <h5 class="text-primary">CQT - Centro de Qualificação Técnica</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Coluna Direita -->
+                <div class="col-lg-4">
+                    <!-- Habilidades e Competências -->
+                    <section class="mb-4 fade-in">
+                        <div class="content-card p-4 bg-white">
+                            <h2 class="section-title mb-4">🧠 Habilidades e Competências</h2>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">Word</span>
+                                    <span class="fw-bold text-primary">74%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 74%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">PowerPoint</span>
+                                    <span class="fw-bold text-primary">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">Excel Básico</span>
+                                    <span class="fw-bold text-primary">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">VS Code</span>
+                                    <span class="fw-bold text-primary">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">GitHub</span>
+                                    <span class="fw-bold text-primary">76%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 76%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">Linux Básico</span>
+                                    <span class="fw-bold text-primary">62%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 62%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="fw-medium">IA Generativa</span>
+                                    <span class="fw-bold text-primary">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Cursos Complementares -->
+                    <section class="mb-4 fade-in delay-1">
+                        <div class="content-card card-highlight p-4">
+                            <h2 class="section-title">📚 Cursos Complementares</h2>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="language-item d-flex justify-content-between p-3 rounded-3">
+                                    <span>Operador Windows</span>
+                                    <span>FAETEC - 2014</span>
+                                </div>
+                                <div class="language-item d-flex justify-content-between p-3 rounded-3" >
+                                    <span>Montagem e Manutenção de Micro</span>
+                                    <span>FAETEC - 2015</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Informações Pessoais -->
+                    <section class="mb-4 fade-in delay-2">
+                        <div class="content-card p-4 bg-white">
+                            <h2 class="section-title mb-4">📋 Informações Pessoais</h2>
+
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <strong>Data de Nascimento:</strong> 12/01/1997
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <strong>Nacionalidade:</strong> Brasileiro
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <strong>Estado Civil:</strong> Solteiro
+                                </div>
+                                <!-- <div class="col-12 mb-3">
+                                    <strong>CRECI:</strong> [Preencher número]
+                                </div> -->
+                                <div class="col-12">
+                                    <strong>Endereço:</strong> Rua Leopoldo Bulhões, 800 - Rua 7, Casa 13, Benfica - Rio de Janeiro – RJ
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Botão Flutuante -->
+    <div class="floating-action">
+        <button class="action-btn d-flex align-items-center justify-content-center" id="floating-contact-btn" title="Entrar em contato" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <i class="fas fa-paper-plane fs-4 mx-2"></i>
+        </button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h4>Vamos trabalhar juntos?</h4>
+                    <p class="mt-3">Estou sempre aberto a discutir novas oportunidades profissionais.</p>
+
+                    <!-- <div class="d-flex justify-content-center gap-4 my-4">
+                        <a href="https://www.linkedin.com/in/dvf-dev" target="_blank" class="footer-link">LinkedIn</a>
+                        <a href="mailto:danielvieiragnd177@gmail.com" class="footer-link">E-mail</a>
+                        <a href="tel:21967287487" class="footer-link">Telefone</a>
+                        <a href="https://api.whatsapp.com/send/?phone=5521967113320&text=Ol%C3%A1%2C+vim+do+seu+%60Curr%C3%ADculo+Online.%60+sou:&type=phone_number&app_absent=0" class="footer-link">WhatsApp</a>
+                    </div> -->
+
+                    <div class="d-flex justify-content-center gap-3 mt-4">
+                        <a href="https://www.linkedin.com/in/dvf-dev" target="_blank" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none" style="width:45px; height:45px;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://github.com/Daniel-DGPlay" target="_blank" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none" style="width:45px; height:45px;">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send/?phone=5521967113320&text=Ol%C3%A1%2C+vim+do+seu+%60Curr%C3%ADculo+Online.%60+sou:&type=phone_number&app_absent=0" target="_blank" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none" style="width:45px; height:45px;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:danielvieiragnd177@gmail.com" class="social-icon d-flex align-items-center justify-content-center rounded-circle text-decoration-none" style="width:45px; height:45px;">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <p class="copyright mt-4">&copy; <span id="current-year">2024</span> Currículo Online. Desenvolvido por <b>Daniel Vieira Ferreira.</b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- -----------------------
+         MODAL DE CONTATO (Bootstrap)
+         ----------------------- -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header px-4">
+            <h5 class="modal-title" id="contactModalLabel">Entrar em Contato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body p-4">
+            <form id="contactForm">
+                <!-- <div class="mb-3">
+                    <label for="contact-name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="contact-name" name="from_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact-email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="contact-email" name="reply_to" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact-phone" class="form-label">Telefone (opcional)</label>
+                    <input type="tel" class="form-control" id="contact-phone" name="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="contact-message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="contact-message" name="message" rows="4" required></textarea>
+                </div> -->
+                <div class="mb-3">
+                    <h2>🛠️ <b>EM BREVE!</b> 👷🏼🧑🏼‍💻</h2>
+                    <hr>
+                    <p>Enquanto isso, pode me chamar via <b><u>Email</u>, <u>WhatsApp/telefone</u> e <u>LinkedIn</u></b>. <br><br>Grato pela compreensão. 😊</p>
+                </div>
+                <hr>
+                <!-- campo escondido para identificação do site / template -->
+                <input type="hidden" name="source" value="Contato via Currículo Online - Daniel Vieira Ferreira">
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-secondary me-2 rounded-pill btn-custom-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="submit" class="btn btn-custom rounded-pill text-white">Enviar Mensagem</button> -->
+                </div>
+            </form>
+
+            <!-- área de feedback -->
+            <!-- <div id="contact-feedback" class="mt-3" style="display:none;"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS bundle (inclui Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS SDK (opcional — necessário quando for usar EmailJS) -->
+    <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
